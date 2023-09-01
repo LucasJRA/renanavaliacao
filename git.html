@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Portifólio</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav justify-content-center menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hospedagem.html"><b>Hospedagem</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="git.html"><b>Git e GitHub</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gitpages.html"><b>Github Pages</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="portfolio.html"><b>Portifólio</b></a>
+              </li> 
+          </ul>
+    </nav>
+<main>
+  <div class="org">
+    <h1>O que são?</h1>
+    <p>Git é um sistema de controle de versão para rastrear alterações em projetos. GitHub é uma plataforma que utiliza o Git para hospedar, colaborar e gerenciar projetos de software de forma eficiente.</p>
+
+    <h1>Passo a passo para configurar o Git local:</h1>
+    <ul>
+        <li>1- Confira se o git está instalado utilizando o comando "git --versions"</li>
+        <li>2- Caso esteja instalado abra sua pasta de documento utilizando o comando "ls"</li>
+        <li>3- Após isso você precisa configurar seu git com os seguintes comandos: 'git config --global user.name "seunome"' logo após este comando utilize o 'git config --global user.email "seuemail"'</li>
+        <li>4- Após isso você deve criar uma pasta para armazenar seus documentos, para isso utilize o seguinte comando 'mkdir "nome da pasta"'</li>
+        <li>5- Depois de criar sua pasta você precisa verificar se ela foi criada com sucesse, utilize o comando 'ls' para isso</li>
+        <li>6- Após ver se sua pasta está criada você pode acessar ela utilizando o comando 'cd "nome da pasta"'</li>
+        <li>7- Após isso você pode criar um repositório para o seu git, utilize o seguinte comando 'git init'</li>
+        <li>8- Por fim você pode abrir a sua pasta no VSCode (Visual Studio Code) utilizando o comando 'code .'</li>
+    </ul>
+
+    <h1>Passo a passo para configurar sua chave SSH:</h1>
+    <ul>
+        <li>1- Primeiro verifique se existe uma chave utilizando o comando 'ssh.ls -al ~/.ssh'</li>
+        <li>2- Após verificar crie uma nova chave (ID), para isso utilize o comando 'ssh-keygen -t ed25519 -C "your_email@example.com"'</li>
+        <li>3- Depois inicialize o agente-ssh com o seguinte comando 'eval "$(ssh-agent -s)"'</li>
+        <li>4- Agora adicione sua chave ssh ao agente, para isso utilize este comando ssh-add ~/.ssh/id_ed25519 e copie sua chave SSH, para isso pode utilizar este comando: 'clip < ~/.ssh/id_ed25519.pub'</li>
+        <li>5- Após isso vá até seu github, procure por settings, depois SSH and GPG keys, após isso procure por New SSH key, coloque um titulo para seu branch e aperte ctrl+v ou clique com o botão direito e clique em 'colar' para adicionar sua chave SSH, após isso apenas confirme</li>
+        <li>6- Por fim para saber se está tudo certo você pode testar a conexão utilizando o comando 'ssh -T git@github.com', após utilizar este comando vai ser perguntado a você quer colocar sua chave no GitHub, caso queira digite 'yes' caso contrário digite 'no'</li>
+    </ul>
+
+    <h1>Passo a passo para criar e clonar um repositório</h1>
+    <ul>
+        <li>1- Primeiro você deve acessar sua conta no GitHub e procure pela opção 'new' e clique nela</li>
+        <li>2- Após isso você insere as informações solicitadas e altera as desejadas e clique no botão 'create repository'</li>
+        <li>3- Depois vá para a pagina inicial de seu repositório e procure pelo botão '<> code' clicando nele vai algumas opções como 'HTTPS' 'SSH' e 'GitHub CLI', clique em 'SSH' e após isso copie o que é mostrado no campo abaixo, deve ser algo parecido com "git@github.com:seunomedeusuario/nomedorepositorio.git"</li>
+        <li>4- Após isso e com o git já configurado em sua máquina utilize o comando 'git clone' com o caminho que você copiu no final dele, deve ficar da seguinte forma 'git clone git@github.com:seunomedeusuario/nomedorepositorio.git', após utilizar o comando basta esperar ele ser clonado para sua máquina e depois você pode acessa-lo sem problemas</li>
+    </ul>
+    </div>
+  </main>
+</body>
+</html>
