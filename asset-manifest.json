@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/renanavaliacao/static/css/main.073c9b0a.css",
+    "main.js": "/renanavaliacao/static/js/main.71623822.js",
+    "static/js/787.989e6b68.chunk.js": "/renanavaliacao/static/js/787.989e6b68.chunk.js",
+    "static/media/logo.svg": "/renanavaliacao/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/renanavaliacao/index.html",
+    "main.073c9b0a.css.map": "/renanavaliacao/static/css/main.073c9b0a.css.map",
+    "main.71623822.js.map": "/renanavaliacao/static/js/main.71623822.js.map",
+    "787.989e6b68.chunk.js.map": "/renanavaliacao/static/js/787.989e6b68.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.71623822.js"
+  ]
+}
